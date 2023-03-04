@@ -19,5 +19,8 @@ public class OneDmArr {
 
         //Arrays
         System.out.println(Arrays.stream(arr2));
+
+        //access element in array
+        System.out.println(arr2[0]);
     }
 }

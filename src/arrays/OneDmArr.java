@@ -22,5 +22,27 @@ public class OneDmArr {
 
         //access element in array
         System.out.println(arr2[0]);
+
+
+        //determine size of arr when create it
+        String[] student = new String[3];
+        System.out.println("Student arr has "+student.length+((student.length>1) ? "s":""));
+        System.out.println("------------------------");
+
+        //utility method
+        Arrays.fill(student,"Sek Piseth");
+        Arrays.fill(student,"Sek Piseth2");
+        for(String i:student)
+            System.out.println(i);
+
+        //reference array
+        System.out.println("--------------------");
+        int[] cam = {1,2,3,4,5};
+        int[] temp = cam;
+        temp = new int[]{10, 20};
+
+        for (int i : temp)
+            System.out.println(i);
+
     }
 }

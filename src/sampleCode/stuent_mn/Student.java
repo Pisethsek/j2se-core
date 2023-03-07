@@ -1,20 +1,23 @@
 package sampleCode.stuent_mn;
 
+import sampleCode.teacher_mn.Teacher;
+
 import java.util.Scanner;
 
 public class Student {
-    int id;
-    String name;
-    int age;
+    public int id;
+    public String name;
+    public int age;
 
-    Student(){}
+    public Student(){}
     Student(int id, String name, int age){
         this.id = id;
         this.name = name;
         this.age = age;
     }
 
-    void input(){
+
+    public void input(){
         Scanner cin = new Scanner(System.in);
         System.out.print("Enter Id   : ");
         this.id = cin.nextInt();
@@ -42,7 +45,7 @@ public class Student {
                 '}';
     }
 
-    static int menu(){
+    public static int menu(){
         Scanner cin = new Scanner(System.in);
         System.out.println("1. Insert student");
         System.out.println("2. Show all student");

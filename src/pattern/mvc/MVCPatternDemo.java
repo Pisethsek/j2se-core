@@ -6,6 +6,7 @@ import pattern.mvc.view.StudentView;
 
 public class MVCPatternDemo {
     public static void main(String[] args) {
+
         Student model = retriveStudentFromDatabase();
 
         StudentView view = new StudentView();
@@ -14,9 +15,6 @@ public class MVCPatternDemo {
 
         controller.updateView();
 
-        controller.setStudentName("Hello");
-
-        controller.updateView();
     }
 
     private static Student retriveStudentFromDatabase(){

@@ -26,5 +26,8 @@ public class Main {
         Student obj = new Student(1, "Sak Visal", "Female", 21, 50.6f);
         obj.printInfo();
 
+        Employee emp = new Employee();
+//        emp.
+
     }
 }
